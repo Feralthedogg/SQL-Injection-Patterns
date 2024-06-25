@@ -16,24 +16,25 @@ To use these patterns, include the `SQL_Injection_Patterns.py` file in your proj
 ### Example in Python
 
 ```python
-import re
 from SQL_Injection_Patterns import check_for_sql_injection
 
-def check_for_sql_injection(query):
-    compiled_patterns = [re.compile(pattern, re.IGNORECASE) for pattern in sql_injection_patterns]
-
-    for pattern in compiled_patterns:
-        if pattern.search(query):
-            return True
-
-    return False
-
-# Example usage
-query = "SELECT * FROM users WHERE username = 'admin' -- AND password = 'password'"
-if check_for_sql_injection(query):
-    print("Potential SQL injection detected!")
+query1 = "SELECT * FROM users WHERE username = 'admin' -- AND password = 'password'"
+if check_for_sql_injection(query1):
+    print("Potential SQL injection detected in query1!")
 else:
-    print("Query seems safe.")
+    print("Query1 seems safe.")
+
+query2 = "INSERT INTO logins (username, password) VALUES ('user', 'pass1234')"
+if check_for_sql_injection(query2):
+    print("Potential SQL injection detected in query2!")
+else:
+    print("Query2 seems safe.")
+
+query3 = "UPDATE accounts SET balance = 10000 WHERE account_id = 1; DROP TABLE transactions;"
+if check_for_sql_injection(query3):
+    print("Potential SQL injection detected in query3!")
+else:
+    print("Query3 seems safe.")
 ```
 
 ## Patterns
