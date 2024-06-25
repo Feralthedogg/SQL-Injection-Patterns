@@ -1,4 +1,3 @@
-```markdown
 # SQL Injection Patterns
 
 This repository contains a comprehensive list of regular expression patterns designed to detect SQL injection attempts. SQL injection is a common web application vulnerability that can compromise the security of your database. This file provides various patterns that can help in identifying potentially malicious SQL queries.
@@ -12,7 +11,7 @@ This repository contains a comprehensive list of regular expression patterns des
 
 ## Usage
 
-To use these patterns, include the `SQL_Injection_Patterns.py` file in your project and integrate it with your query validation logic. Below is an example of how you can use these patterns in Python to check for SQL injection attempts.```
+To use these patterns, include the `SQL_Injection_Patterns.py` file in your project and integrate it with your query validation logic. Below is an example of how you can use these patterns in Python to check for SQL injection attempts.
 
 ### Example in Python
 
