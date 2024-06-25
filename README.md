@@ -17,7 +17,7 @@ To use these patterns, include the `SQL_Injection_Patterns.py` file in your proj
 
 ```python
 import re
-from SQL_Injection_Patterns import sql_injection_patterns
+from SQL_Injection_Patterns import check_for_sql_injection
 
 def check_for_sql_injection(query):
     compiled_patterns = [re.compile(pattern, re.IGNORECASE) for pattern in sql_injection_patterns]
