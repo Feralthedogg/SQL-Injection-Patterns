@@ -273,6 +273,7 @@ def check_for_sql_injection(query):
 
     return False
 
+# It may be updated later
 
 #___  ___            _           ______            ______                     _ 
 #|  \/  |           | |          | ___ \           |  ___|                   | |
