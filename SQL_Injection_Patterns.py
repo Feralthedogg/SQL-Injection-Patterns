@@ -1,3 +1,5 @@
+import re
+
 def check_for_sql_injection(query):
     sql_injection_patterns = [
         r"(\bor\b|\band\b).*?=.*?",  # OR/AND 패턴
