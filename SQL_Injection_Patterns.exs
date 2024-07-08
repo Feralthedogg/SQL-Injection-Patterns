@@ -120,59 +120,59 @@ defmodule SQLInjectionChecker do
     ~r/(?i)\bselect\b.*\bsu\b/,  # SELECT SU 패턴
     ~r/(?i)\bselect\b.*\broot\b/,  # SELECT ROOT 패턴
     ~r/(?i)\bselect\b.*\bshell\b/,  # SELECT SHELL 패턴
-    ~r/(?i)\bselect\b.*\bsh\b/,  // SELECT SH 패턴
-    ~r/(?i)\bselect\b.*\bbash\b/,  // SELECT BASH 패턴
-    ~r/(?i)\bselect\b.*\bzsh\b/,  // SELECT ZSH 패턴
-    ~r/(?i)\bselect\b.*\bssh\b/,  // SELECT SSH 패턴
-    ~r/(?i)\bselect\b.*\brsh\b/,  // SELECT RSH 패턴
-    ~r/(?i)\bselect\b.*\brlogin\b/,  // SELECT RLOGIN 패턴
-    ~r/(?i)\bselect\b.*\brcp\b/,  // SELECT RCP 패턴
-    ~r/(?i)\bselect\b.*\bftp\b/,  // SELECT FTP 패턴
-    ~r/(?i)\bselect\b.*\bsftp\b/,  // SELECT SFTP 패턴
-    ~r/(?i)\bselect\b.*\btelnet\b/,  // SELECT TELNET 패턴
-    ~r/(?i)\bselect\b.*\brpc\b/,  // SELECT RPC 패턴
-    ~r/(?i)\bselect\b.*\bport\b/,  // SELECT PORT 패턴
-    ~r/(?i)\bselect\b.*\bports\b/,  // SELECT PORTS 패턴
-    ~r/(?i)\bselect\b.*\bnetstat\b/,  // SELECT NETSTAT 패턴
-    ~r/(?i)\bselect\b.*\bping\b/,  // SELECT PING 패턴
-    ~r/(?i)\bselect\b.*\btraceroute\b/,  // SELECT TRACEROUTE 패턴
-    ~r/(?i)\bselect\b.*\bnmap\b/,  // SELECT NMAP 패턴
-    ~r/(?i)\bselect\b.*\bwhois\b/,  // SELECT WHOIS 패턴
-    ~r/(?i)\bselect\b.*\bdig\b/,  // SELECT DIG 패턴
-    ~r/(?i)\bselect\b.*\bnameserver\b/,  // SELECT NAMESERVER 패턴
-    ~r/(?i)\bselect\b.*\bdns\b/,  // SELECT DNS 패턴
-    ~r/(?i)\bselect\b.*\bdomain\b/,  // SELECT DOMAIN 패턴
-    ~r/(?i)\bselect\b.*\bdomainname\b/,  // SELECT DOMAINNAME 패턴
-    ~r/(?i)\bselect\b.*\bdnssec\b/,  // SELECT DNSSEC 패턴
-    ~r/(?i)\bselect\b.*\bzone\b/,  // SELECT ZONE 패턴
-    ~r/(?i)\bselect\b.*\bzones\b/,  // SELECT ZONES 패턴
-    ~r/(?i)\bselect\b.*\bnslookup\b/,  // SELECT NSLOOKUP 패턴
-    ~r/(?i)\bselect\b.*\bdig\b/,  // SELECT DIG 패턴
-    ~r/(?i)\bselect\b.*\bip\b/,  // SELECT IP 패턴
-    ~r/(?i)\bselect\b.*\bipv4\b/,  // SELECT IPV4 패턴
-    ~r/(?i)\bselect\b.*\bipv6\b/,  // SELECT IPV6 패턴
-    ~r/(?i)\bselect\b.*\bmac\b/,  // SELECT MAC 패턴
-    ~r/(?i)\bselect\b.*\baddress\b/,  // SELECT ADDRESS 패턴
-    ~r/(?i)\bselect\b.*\bgateway\b/,  // SELECT GATEWAY 패턴
-    ~r/(?i)\bselect\b.*\brouting\b/,  // SELECT ROUTING 패턴
-    ~r/(?i)\bselect\b.*\binterface\b/,  // SELECT INTERFACE 패턴
-    ~r/(?i)\bselect\b.*\bdevice\b/,  // SELECT DEVICE 패턴
-    ~r/(?i)\bselect\b.*\bhostname\b/,  // SELECT HOSTNAME 패턴
-    ~r/(?i)\bselect\b.*\bhost\b/,  // SELECT HOST 패턴
-    ~r/(?i)\bselect\b.*\bsubnet\b/,  // SELECT SUBNET 패턴
-    ~r/(?i)\bselect\b.*\bnetwork\b/,  // SELECT NETWORK 패턴
-    ~r/(?i)\bselect\b.*\bnetworks\b/,  // SELECT NETWORKS 패턴
-    ~r/(?i)\bselect\b.*\btopology\b/,  // SELECT TOPOLOGY 패턴
-    ~r/(?i)\bselect\b.*\btcp\b/,  // SELECT TCP 패턴
-    ~r/(?i)\bselect\b.*\budp\b/,  // SELECT UDP 패턴
-    ~r/(?i)\blicence\b/,  // SELECT LICENCE 패턴
-    ~r/(?i)\blicense\b/,  // SELECT LICENSE 패턴
-    ~r/(?i)\bselect\b.*\bkey\b/,  // SELECT KEY 패턴
-    ~r/(?i)\bselect\b.*\bkeys\b/,  // SELECT KEYS 패턴
-    ~r/(?i)\bselect\b.*\bcertificate\b/,  // SELECT CERTIFICATE 패턴
-    ~r/(?i)\bselect\b.*\bcertificates\b/,  // SELECT CERTIFICATES 패턴
-    ~r/(?i)\bselect\b.*\bcert\b/,  // SELECT CERT 패턴
-    ~r/(?i)\bselect\b.*\bca\b/,  // SELECT CA 패턴
+    ~r/(?i)\bselect\b.*\bsh\b/,  # SELECT SH 패턴
+    ~r/(?i)\bselect\b.*\bbash\b/,  # SELECT BASH 패턴
+    ~r/(?i)\bselect\b.*\bzsh\b/,  # SELECT ZSH 패턴
+    ~r/(?i)\bselect\b.*\bssh\b/,  # SELECT SSH 패턴
+    ~r/(?i)\bselect\b.*\brsh\b/,  # SELECT RSH 패턴
+    ~r/(?i)\bselect\b.*\brlogin\b/,  # SELECT RLOGIN 패턴
+    ~r/(?i)\bselect\b.*\brcp\b/,  # SELECT RCP 패턴
+    ~r/(?i)\bselect\b.*\bftp\b/,  # SELECT FTP 패턴
+    ~r/(?i)\bselect\b.*\bsftp\b/,  # SELECT SFTP 패턴
+    ~r/(?i)\bselect\b.*\btelnet\b/,  # SELECT TELNET 패턴
+    ~r/(?i)\bselect\b.*\brpc\b/,  # SELECT RPC 패턴
+    ~r/(?i)\bselect\b.*\bport\b/,  # SELECT PORT 패턴
+    ~r/(?i)\bselect\b.*\bports\b/,  # SELECT PORTS 패턴
+    ~r/(?i)\bselect\b.*\bnetstat\b/,  # SELECT NETSTAT 패턴
+    ~r/(?i)\bselect\b.*\bping\b/,  # SELECT PING 패턴
+    ~r/(?i)\bselect\b.*\btraceroute\b/,  # SELECT TRACEROUTE 패턴
+    ~r/(?i)\bselect\b.*\bnmap\b/,  # SELECT NMAP 패턴
+    ~r/(?i)\bselect\b.*\bwhois\b/,  # SELECT WHOIS 패턴
+    ~r/(?i)\bselect\b.*\bdig\b/,  # SELECT DIG 패턴
+    ~r/(?i)\bselect\b.*\bnameserver\b/,  # SELECT NAMESERVER 패턴
+    ~r/(?i)\bselect\b.*\bdns\b/,  # SELECT DNS 패턴
+    ~r/(?i)\bselect\b.*\bdomain\b/,  # SELECT DOMAIN 패턴
+    ~r/(?i)\bselect\b.*\bdomainname\b/,  # SELECT DOMAINNAME 패턴
+    ~r/(?i)\bselect\b.*\bdnssec\b/,  # SELECT DNSSEC 패턴
+    ~r/(?i)\bselect\b.*\bzone\b/,  # SELECT ZONE 패턴
+    ~r/(?i)\bselect\b.*\bzones\b/,  # SELECT ZONES 패턴
+    ~r/(?i)\bselect\b.*\bnslookup\b/,  # SELECT NSLOOKUP 패턴
+    ~r/(?i)\bselect\b.*\bdig\b/,  # SELECT DIG 패턴
+    ~r/(?i)\bselect\b.*\bip\b/,  # SELECT IP 패턴
+    ~r/(?i)\bselect\b.*\bipv4\b/,  # SELECT IPV4 패턴
+    ~r/(?i)\bselect\b.*\bipv6\b/,  # SELECT IPV6 패턴
+    ~r/(?i)\bselect\b.*\bmac\b/,  # SELECT MAC 패턴
+    ~r/(?i)\bselect\b.*\baddress\b/,  # SELECT ADDRESS 패턴
+    ~r/(?i)\bselect\b.*\bgateway\b/,  # SELECT GATEWAY 패턴
+    ~r/(?i)\bselect\b.*\brouting\b/,  # SELECT ROUTING 패턴
+    ~r/(?i)\bselect\b.*\binterface\b/,  # SELECT INTERFACE 패턴
+    ~r/(?i)\bselect\b.*\bdevice\b/,  # SELECT DEVICE 패턴
+    ~r/(?i)\bselect\b.*\bhostname\b/,  # SELECT HOSTNAME 패턴
+    ~r/(?i)\bselect\b.*\bhost\b/,  # SELECT HOST 패턴
+    ~r/(?i)\bselect\b.*\bsubnet\b/,  # SELECT SUBNET 패턴
+    ~r/(?i)\bselect\b.*\bnetwork\b/,  # SELECT NETWORK 패턴
+    ~r/(?i)\bselect\b.*\bnetworks\b/,  # SELECT NETWORKS 패턴
+    ~r/(?i)\bselect\b.*\btopology\b/,  # SELECT TOPOLOGY 패턴
+    ~r/(?i)\bselect\b.*\btcp\b/,  # SELECT TCP 패턴
+    ~r/(?i)\bselect\b.*\budp\b/,  # SELECT UDP 패턴
+    ~r/(?i)\blicence\b/,  # SELECT LICENCE 패턴
+    ~r/(?i)\blicense\b/,  # SELECT LICENSE 패턴
+    ~r/(?i)\bselect\b.*\bkey\b/,  # SELECT KEY 패턴
+    ~r/(?i)\bselect\b.*\bkeys\b/,  # SELECT KEYS 패턴
+    ~r/(?i)\bselect\b.*\bcertificate\b/,  # SELECT CERTIFICATE 패턴
+    ~r/(?i)\bselect\b.*\bcertificates\b/,  # SELECT CERTIFICATES 패턴
+    ~r/(?i)\bselect\b.*\bcert\b/,  # SELECT CERT 패턴
+    ~r/(?i)\bselect\b.*\bca\b/,  # SELECT CA 패턴
     ~r/(?i)\bselect\b.*\bcertificate_authority\b/,  // SELECT CERTIFICATE AUTHORITY 패턴
     ~r/(?i)\bselect\b.*\bchain\b/,  // SELECT CHAIN 패턴
     ~r/(?i)\bselect\b.*\bcrl\b/,  // SELECT CRL 패턴
@@ -201,17 +201,17 @@ defmodule SQLInjectionChecker do
     ~r/(?i)\bselect\b.*\bcsr\b/,  // SELECT CSR 패턴
     ~r/(?i)\bselect\b.*\bder\b/,  // SELECT DER 패턴
     ~r/(?i)\bselect\b.*\bkey\b/,  // SELECT KEY 패턴
-    ~r/(?i)\bselect\b.*\brsa\b/,  // SELECT RSA 패턴
-    ~r/(?i)\bselect\b.*\brsa_public\b/,  // SELECT RSA PUBLIC 패턴
-    ~r/(?i)\bselect\b.*\brsa_private\b/,  // SELECT RSA PRIVATE 패턴
-    ~r/(?i)\bselect\b.*\becdsa\b/,  // SELECT ECDSA 패턴
-    ~r/(?i)\bselect\b.*\becdh\b/,  // SELECT ECDH 패턴
-    ~r/(?i)\bselect\b.*\bkey_exchange\b/,  // SELECT KEY EXCHANGE 패턴
-    ~r/(?i)\bselect\b.*\bdh\b/,  // SELECT DH 패턴
-    ~r/(?i)\bselect\b.*\bdhe\b/,  // SELECT DHE 패턴
-    ~r/(?i)\bselect\b.*\brandom\b/,  // SELECT RANDOM 패턴
-    ~r/(?i)\bselect\b.*\bsalt\b/,  // SELECT SALT 패턴
-    ~r/(?i)\bselect\b.*\bnonce\b/,  // SELECT NONCE 패턴
+    ~r/(?i)\bselect\b.*\brsa\b/,  # SELECT RSA 패턴
+    ~r/(?i)\bselect\b.*\brsa_public\b/, # SELECT RSA PUBLIC 패턴
+    ~r/(?i)\bselect\b.*\brsa_private\b/,  # SELECT RSA PRIVATE 패턴
+    ~r/(?i)\bselect\b.*\becdsa\b/,  # SELECT ECDSA 패턴
+    ~r/(?i)\bselect\b.*\becdh\b/,  # SELECT ECDH 패턴
+    ~r/(?i)\bselect\b.*\bkey_exchange\b/,  # SELECT KEY EXCHANGE 패턴
+    ~r/(?i)\bselect\b.*\bdh\b/,  # SELECT DH 패턴
+    ~r/(?i)\bselect\b.*\bdhe\b/,  # SELECT DHE 패턴
+    ~r/(?i)\bselect\b.*\brandom\b/,  # SELECT RANDOM 패턴
+    ~r/(?i)\bselect\b.*\bsalt\b/,  # SELECT SALT 패턴
+    ~r/(?i)\bselect\b.*\bnonce\b/,  # SELECT NONCE 패턴
   ]
 
   def check_for_sql_injection(query) do
