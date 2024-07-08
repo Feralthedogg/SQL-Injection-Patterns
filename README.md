@@ -56,6 +56,16 @@ fn main() {
     println!("{}", check_for_sql_injection(user_query));  // true
 }
 ```
+
+### Example in Go
+```go
+func main() {
+    userQuery := "SELECT * FROM users WHERE username='admin' OR 1=1 --' AND password='password'"
+    fmt.Println(checkForSQLInjection(userQuery))  // true
+}
+```
+
+
 ## Patterns
 
 The `SQL_Injection_Patterns.py` file contains the following types of patterns:
