@@ -64,7 +64,11 @@ func main() {
     fmt.Println(checkForSQLInjection(userQuery))  // true
 }
 ```
-
+### Example in Elixir
+```elixir
+user_query = "SELECT * FROM users WHERE username='admin' OR 1=1 --' AND password='password'"
+IO.puts(SQLInjectionChecker.check_for_sql_injection(user_query))  # true
+```
 
 ## Patterns
 
