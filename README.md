@@ -43,6 +43,12 @@ const userQuery = "SELECT * FROM users WHERE username='admin' OR 1=1 --' AND pas
 console.log(checkForSQLInjection(userQuery)); // true
 ```
 
+### Example in TypeScript
+```typescript
+const userQuery: string = "SELECT * FROM users WHERE username='admin' OR 1=1 --' AND password='password'";
+console.log(checkForSQLInjection(userQuery));  // true
+```
+
 ## Patterns
 
 The `SQL_Injection_Patterns.py` file contains the following types of patterns:
