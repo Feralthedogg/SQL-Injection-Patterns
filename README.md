@@ -38,7 +38,7 @@ else:
 ```
 
 ### Example in JavaScript
-```
+```javascript
 const userQuery = "SELECT * FROM users WHERE username='admin' OR 1=1 --' AND password='password'";
 console.log(checkForSQLInjection(userQuery)); // true
 ```
