@@ -49,6 +49,13 @@ const userQuery: string = "SELECT * FROM users WHERE username='admin' OR 1=1 --'
 console.log(checkForSQLInjection(userQuery));  // true
 ```
 
+### Example in Rust
+```rust
+fn main() {
+    let user_query = "SELECT * FROM users WHERE username='admin' OR 1=1 --' AND password='password'";
+    println!("{}", check_for_sql_injection(user_query));  // true
+}
+```
 ## Patterns
 
 The `SQL_Injection_Patterns.py` file contains the following types of patterns:
