@@ -173,34 +173,34 @@ defmodule SQLInjectionChecker do
     ~r/(?i)\bselect\b.*\bcertificates\b/,  # SELECT CERTIFICATES 패턴
     ~r/(?i)\bselect\b.*\bcert\b/,  # SELECT CERT 패턴
     ~r/(?i)\bselect\b.*\bca\b/,  # SELECT CA 패턴
-    ~r/(?i)\bselect\b.*\bcertificate_authority\b/,  // SELECT CERTIFICATE AUTHORITY 패턴
-    ~r/(?i)\bselect\b.*\bchain\b/,  // SELECT CHAIN 패턴
-    ~r/(?i)\bselect\b.*\bcrl\b/,  // SELECT CRL 패턴
-    ~r/(?i)\bselect\b.*\bcertification\b/,  // SELECT CERTIFICATION 패턴
-    ~r/(?i)\bselect\b.*\bssl\b/,  // SELECT SSL 패턴
-    ~r/(?i)\bselect\b.*\btls\b/,  // SELECT TLS 패턴
-    ~r/(?i)\bselect\b.*\bhash\b/,  // SELECT HASH 패턴
-    ~r/(?i)\bselect\b.*\bdigest\b/,  // SELECT DIGEST 패턴
-    ~r/(?i)\bselect\b.*\bsignature\b/,  // SELECT SIGNATURE 패턴
-    ~r/(?i)\bselect\b.*\bsignatures\b/,  // SELECT SIGNATURES 패턴
-    ~r/(?i)\bselect\b.*\bkeypair\b/,  // SELECT KEYPAIR 패턴
-    ~r/(?i)\bselect\b.*\bpublic\b/,  // SELECT PUBLIC 패턴
-    ~r/(?i)\bselect\b.*\bprivate\b/,  // SELECT PRIVATE 패턴
-    ~r/(?i)\bselect\b.*\bsecure\b/,  // SELECT SECURE 패턴
-    ~r/(?i)\bselect\b.*\bencryption\b/,  // SELECT ENCRYPTION 패턴
-    ~r/(?i)\bselect\b.*\bdecryption\b/,  // SELECT DECRYPTION 패턴
-    ~r/(?i)\bselect\b.*\bpgp\b/,  // SELECT PGP 패턴
-    ~r/(?i)\bselect\b.*\bgpg\b/,  // SELECT GPG 패턴
-    ~r/(?i)\bselect\b.*\bpem\b/,  // SELECT PEM 패턴
-    ~r/(?i)\bselect\b.*\bpkcs\b/,  // SELECT PKCS 패턴
-    ~r/(?i)\bselect\b.*\bpgp\b/,  // SELECT PGP 패턴
-    ~r/(?i)\bselect\b.*\bx509\b/,  // SELECT X509 패턴
-    ~r/(?i)\bselect\b.*\bkeygen\b/,  // SELECT KEYGEN 패턴
-    ~r/(?i)\bselect\b.*\bpk\b/,  // SELECT PK 패턴
-    ~r/(?i)\bselect\b.*\bpkcs\b/,  // SELECT PKCS 패턴
-    ~r/(?i)\bselect\b.*\bcsr\b/,  // SELECT CSR 패턴
-    ~r/(?i)\bselect\b.*\bder\b/,  // SELECT DER 패턴
-    ~r/(?i)\bselect\b.*\bkey\b/,  // SELECT KEY 패턴
+    ~r/(?i)\bselect\b.*\bcertificate_authority\b/,  # SELECT CERTIFICATE AUTHORITY 패턴
+    ~r/(?i)\bselect\b.*\bchain\b/,  # SELECT CHAIN 패턴
+    ~r/(?i)\bselect\b.*\bcrl\b/,  # SELECT CRL 패턴
+    ~r/(?i)\bselect\b.*\bcertification\b/,  # SELECT CERTIFICATION 패턴
+    ~r/(?i)\bselect\b.*\bssl\b/,  # SELECT SSL 패턴
+    ~r/(?i)\bselect\b.*\btls\b/,  # SELECT TLS 패턴
+    ~r/(?i)\bselect\b.*\bhash\b/,  # SELECT HASH 패턴
+    ~r/(?i)\bselect\b.*\bdigest\b/,  # SELECT DIGEST 패턴
+    ~r/(?i)\bselect\b.*\bsignature\b/,  # SELECT SIGNATURE 패턴
+    ~r/(?i)\bselect\b.*\bsignatures\b/,  # SELECT SIGNATURES 패턴
+    ~r/(?i)\bselect\b.*\bkeypair\b/,  # SELECT KEYPAIR 패턴
+    ~r/(?i)\bselect\b.*\bpublic\b/,  # SELECT PUBLIC 패턴
+    ~r/(?i)\bselect\b.*\bprivate\b/,  # SELECT PRIVATE 패턴
+    ~r/(?i)\bselect\b.*\bsecure\b/,  # SELECT SECURE 패턴
+    ~r/(?i)\bselect\b.*\bencryption\b/,  # SELECT ENCRYPTION 패턴
+    ~r/(?i)\bselect\b.*\bdecryption\b/,  # SELECT DECRYPTION 패턴
+    ~r/(?i)\bselect\b.*\bpgp\b/,  # SELECT PGP 패턴
+    ~r/(?i)\bselect\b.*\bgpg\b/,  # SELECT GPG 패턴
+    ~r/(?i)\bselect\b.*\bpem\b/,  # SELECT PEM 패턴
+    ~r/(?i)\bselect\b.*\bpkcs\b/,  # SELECT PKCS 패턴
+    ~r/(?i)\bselect\b.*\bpgp\b/,  # SELECT PGP 패턴
+    ~r/(?i)\bselect\b.*\bx509\b/,  # SELECT X509 패턴
+    ~r/(?i)\bselect\b.*\bkeygen\b/,  # SELECT KEYGEN 패턴
+    ~r/(?i)\bselect\b.*\bpk\b/,  # SELECT PK 패턴
+    ~r/(?i)\bselect\b.*\bpkcs\b/,  # SELECT PKCS 패턴
+    ~r/(?i)\bselect\b.*\bcsr\b/,  # SELECT CSR 패턴
+    ~r/(?i)\bselect\b.*\bder\b/,  # SELECT DER 패턴
+    ~r/(?i)\bselect\b.*\bkey\b/,  # SELECT KEY 패턴
     ~r/(?i)\bselect\b.*\brsa\b/,  # SELECT RSA 패턴
     ~r/(?i)\bselect\b.*\brsa_public\b/, # SELECT RSA PUBLIC 패턴
     ~r/(?i)\bselect\b.*\brsa_private\b/,  # SELECT RSA PRIVATE 패턴
